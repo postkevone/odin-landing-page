@@ -7,7 +7,7 @@
 }
 
 :root {
-    --global-padding: 128px;
+    --global-padding: 5%;
     --hero-primary-color: #f9faf8;
     --hero-secondary-color: #E5E7EB;
     --hero-background-color: #1F2937;
@@ -15,6 +15,36 @@
     --quote-background-color: #E5E7EB;
     --quote-color: #1f2937;
     --button-color: #3882F6;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --global-padding: 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --global-padding: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --global-padding: 20%;
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --global-padding: 25%;
+    }
+}
+
+@media (min-width: 1600px) {
+    :root {
+        --global-padding: 30%;
+    }
 }
 
 body {
@@ -60,7 +90,7 @@ ul {
 }
 
 .content1 {
-    padding: calc(var(--global-padding)/2) var(--global-padding);
+    padding: 64px var(--global-padding);
     display: flex;
     gap: 2em;
 }
@@ -100,10 +130,10 @@ ul {
 }
 
 .content2 {
-    padding: calc(var(--global-padding)/4) var(--global-padding) calc(var(--global-padding)/2) var(--global-padding);
+    padding: 32px var(--global-padding) 64px var(--global-padding);
     display: flex;
     flex-direction: column;
-    gap: calc(var(--global-padding)/4);
+    gap: 32px;
 }
 
 .content2 .top {
@@ -140,7 +170,7 @@ ul {
 }
 
 .content3 {
-    padding: calc(var(--global-padding)/2) var(--global-padding);
+    padding: 64px var(--global-padding);
     display: flex;
     flex-direction: column;
     color: var(--quote-color);
@@ -159,14 +189,14 @@ ul {
 }
 
 .content4 {
-    padding: calc(var(--global-padding)/2) var(--global-padding);
+    padding: 64px var(--global-padding);
 }
 
 .content4 .action-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: calc(var(--global-padding)/4) calc(var(--global-padding)/2);
+    padding: 32px 64px;
     background-color: var(--button-color);
     border-radius: 8px;
 }
