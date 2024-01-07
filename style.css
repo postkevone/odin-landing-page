@@ -7,7 +7,7 @@
 }
 
 :root {
-    --global-padding: 8em;
+    --global-padding: 128px;
     --hero-primary-color: #f9faf8;
     --hero-secondary-color: #E5E7EB;
     --hero-background-color: #1F2937;
@@ -115,7 +115,8 @@ ul {
 
 .content2 .bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
 }
 
 .content2 .bottom .box {
